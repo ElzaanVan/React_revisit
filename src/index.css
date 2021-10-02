@@ -1,13 +1,18 @@
 body {
+  margin-top: 25px;
   margin: 0;
   font-family: monospace;
   padding: 20px;
+  background-image: url("./components/media/undraw_quick_chat_re_bit5.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /*APP*/
 .App {
+  background: #fff;
   max-width: 500px;
-  margin: 30px auto;
+  margin: 30px;
   overflow: auto;
   min-height: 300px;
   border: 1px solid rgb(194, 194, 194);
@@ -17,16 +22,23 @@ body {
 }
 
 /*HEADER*/
+header.Header {
+  margin-bottom: 25px;
+}
 .header_title {
   display: inline;
 }
 .header {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 .header_button {
   float: right;
+}
+.header_button:hover {
+  border: 2px solid #00b0ff;
+  color: #00b0ff;
+  box-shadow: 2px 2px #00b0ff;
 }
 /*HEADER  END*/
 
@@ -44,3 +56,21 @@ body {
   font-size: 15px;
   font-family: inherit;
 }
+
+/*TASK*/
+.task {
+  background: #eee;
+  margin-top: 10px;
+  padding: 1px 5px;
+}
+svg.task_close {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  color: rgb(255, 5, 130);
+}
+.reminder {
+  border-left: 5px solid #00b0ff;
+}
+/*TASK END*/
